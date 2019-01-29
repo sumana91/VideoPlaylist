@@ -1,0 +1,14 @@
+{
+  "name": "vemba",
+  "version": "1.0.0",
+  "description": "vemba project",
+  "main": "supervisor app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sumana",
+  "license": "ISC",
+  "dependencies": {
+    "bookshelf": "^0.14.2"
+  }
+}
