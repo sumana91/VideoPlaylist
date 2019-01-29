@@ -35,7 +35,7 @@ Application to add set of videos and creating a playlist with the set of videos
    DELETE request on `/api/playlist/:id` 
 
 ### Shuffling the playlist
-Run the shuffle.js code to shuffle the playlist by `shuffle_videos(video_list)
+Run the shuffle.js code to shuffle the playlist by `shuffle_videos(video_list)`
 
 
 
