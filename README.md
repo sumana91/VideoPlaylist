@@ -21,8 +21,8 @@ Application to add set of videos and creating a playlist with the set of videos
 - Port is 8009
 
 ### Set of APIs implemented
-1)Endpoint to insert a new video into the system. 
-  POST request on `/api/video`.
+1)Endpoint to insert a new video into the system.  
+  POST request on `/api/video`. 
 2)Endpoint that accepts the video ID as a parameter and returns data about that video 
   GET request on `/api/video/:id`
 3)Endpoint that accepts the video ID as a parameter and deletes the video
