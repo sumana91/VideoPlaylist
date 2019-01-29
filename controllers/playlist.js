@@ -6,7 +6,7 @@ var video = require('../db/models/video')
 
 //Endpoint to insert a new playlist, accepting list of parameters
 router.post('/', function(req,res, next){
-  var video_list = req.query.array;
+  var video_list = req.query.video_list;
   var final_title_list = [];
   video.fetchAll({columns: ['title']})
   .then(function(result) {
@@ -28,8 +28,8 @@ router.post('/', function(req,res, next){
       })
       .save()
       .then(function(playlistresult) {
-        for(var i = 0; i < match.length; i++) {
-          video.query({where: {title: match[i]}})
+        for(var i = 0; i < final_title_list.length; i++) {
+          video.query({where: {title: final_title_list[i]}})
           .fetch({require: true})
           .then(function(video_result){
             playlist_video.forge({
