@@ -1,5 +1,5 @@
 # video-playlist
-Application to add set of videos and creating a playlist with the set of videos
+Application to add set of videos and creating a playlist with those set of videos, in Nodejs and Postgresql.
 
 ## Requirements
 - Nodejs
@@ -11,7 +11,7 @@ Application to add set of videos and creating a playlist with the set of videos
 ### Install Dependencies
 `npm install --save`
 
-### Setup the database and run the migration scrit(knexfile.js)
+### Setup the database and run the migration script(knexfile.js)
 `knex migrate:latest`
 
 ### Run it locally
@@ -32,7 +32,7 @@ Application to add set of videos and creating a playlist with the set of videos
   5. Endpoint that accepts the playlist ID as a parameter and returns the list of videos for that playlist 
   GET request on `/api/playlist/:playlist_id` 
   6. Endpoint that accepts the playlist ID as a parameter and delete the playlist 
-   DELETE request on `/api/playlist/:id` 
+  DELETE request on `/api/playlist/:id` 
 
 ### Shuffling the playlist
 Run the shuffle.js code to shuffle the playlist by `shuffle_videos(video_list)`
