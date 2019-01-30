@@ -1,4 +1,4 @@
-# video-playlist
+# Video-Playlist
 Application to add set of videos and creating a playlist with those set of videos, in Nodejs and Postgresql.
 
 ## Requirements
